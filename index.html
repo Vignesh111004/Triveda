@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triveda</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #181818;
+            color: #fff;
+            font-family: sans-serif;
+            margin: 0;
+            padding-top: 70px;
+            /* Adjust for the fixed navbar */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #007bff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo h1 {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navbar button:hover {
+            background-color: #003f7f;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 100px 0;
+        }
+
+        .hero .container1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hero-text h2 {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Scroll Section */
+        .scroll-section {
+            padding: 40px 0;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #282828;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            color: #fff;
+        }
+
+        .card-content h3 {
+            margin-bottom: 5px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* About and Contact Section */
+        section.about,
+        section.contact {
+            padding: 50px 0;
+            background-color: #222;
+        }
+
+        h2,
+        h3 {
+            color: white;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Static Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#scroll-section">DOCUMENT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+        <div class="container1">
+            <video autoplay muted loop id="background-video">
+                <source src="cap.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-text">
+                <h2>CHARTING YOUR BTECH PATH TOWARDS A FULFILLING FUTURE</h2>
+                <button id="get-started">GET STARTED NOW</button>
+            </div>
+        </div>
+
+
+
+    <!-- Scroll Section -->
+    <section class="scroll-section" id="scroll-section">
+        <div class="container">
+            <h1 class="title"><b>SELECT YOUR INTERESTED DOMAIN</b></h1>
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://roadmap.sh/computer-science">
+                        <img src="cse.jpg" alt="CSE">
+                    </a>
+                    <div class="card-content">
+                        <h3>Computer science</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="">
+
+                        <img src="mech.jpeg" alt="Mech">
+                    </a>
+                    <div class="card-content">
+                        <h3>Mechanical</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="">
+
+                        <img src="elo.jpeg" alt="Electronics">
+                    </a>
+                    <div class="card-content">
+                        <h3>Electronics</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="">
+
+                        <img src="aeo.jpeg" alt="Electrical">
+                    </a>
+                    <div class="card-content">
+                        <h3>Aerospace</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="">
+
+                        <img src="civil.jpeg" alt="Civil">
+                    </a>
+                    <div class="card-content">
+                        <h3>Civil</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="">
+
+                        <img src="che.jpeg" alt="Chemical">
+                    </a>
+                    <div class="card-content">
+                        <h3>Chemical</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Triveda</h2>
+            <p>Roadmap is an online portal that helps BTech aspirants choose the right specialization and build a
+                successful engineering career. It offers detailed information on various fields, future career trends,
+                and self-assessment tools. With insights from industry experts, Roadmap guides you through
+                specializations like Computer Science and Robotics. It also helps you develop technical and soft skills,
+                explore higher education, and find internships. Navigate your BTech journey confidently with Roadmap!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>MVGR COLLEGE</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>22331A1245@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>1234567890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Triveda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+
+    <!-- Smooth Scrolling for Button -->
+    <script>
+        document.getElementById('get-started').addEventListener('click', function () {
+            document.getElementById('scroll-section').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>

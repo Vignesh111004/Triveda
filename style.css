@@ -1,0 +1,219 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container1 {
+    max-width: auto;
+    margin: 0 auto;
+}
+/* Add this for video background styling */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Behind the content */
+}
+
+.container1 {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Full viewport height */
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.hero-text {
+    z-index: 1; /* Bring the text above the video */
+    color: white;
+    text-align: center;
+}
+
+/* Styling for the header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* About section */
+.about {
+    padding: 50px 0;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Contact section */
+.contact {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-item {
+    text-align: center;
+    margin: 0 30px;
+}
+
+.info-item i {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.info-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* New Scroll Section */
+.scroll-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color:black;
+    color: white;
+}
+
+.scroll-section .description {
+    width: 50%;
+}
+
+.scroll-section .image {
+    width: 40%;
+}
+
+.scroll-section .image img {
+    max-width: 100%;
+    height: auto;
+}
+.scroll-section {
+    height: 750px; /* Increase the height as per your requirement */
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
